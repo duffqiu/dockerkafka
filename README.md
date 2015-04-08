@@ -33,5 +33,7 @@ The kafka version is 0.8.2.1
 
 - Start node 3: `docker run -d --name kafka3 -p 9094:9092 --hostname kafka3 -v /root/docker/kafka/multiple/3/config:/kafka_2.11/config -v /root/docker/kafka/multiple/3/tmp/kafka-logs:/tmp/kafka-logs duffqiu/kafka`
 
+   - note: you need to change the path to your local path at the -v parameter
+
 - Limitation: right now only can run the app(consumer/producer) in the docker's host or in the container belonding to the same docker server.(you can use duffqiu/kafka_cmd images to run the topics, consumer, producer's client which are from kafka software packages). Till now, I still can't find the way to run the app in the VM's host or in different docker server's containers.
 
