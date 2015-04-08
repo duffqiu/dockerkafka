@@ -19,7 +19,7 @@ The kafka version is 0.8.2.1
 
 #Multiple-broker mode
 
-- Clone the github: ``
+- Clone the github: `https://github.com/duffqiu/dockerkafka.git`
 
 - Start a zookeeper standalone (or a cluster)
 
