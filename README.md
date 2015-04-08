@@ -37,3 +37,4 @@ The kafka version is 0.8.2.1
 
    - note: if you want to run the app outside the docker's host or the container under the same the docker, you need to use the bridge network mode in the virtualbox.
 
+   - note: you need to make sure you have enough memory for each kafka container (1G at lease)
