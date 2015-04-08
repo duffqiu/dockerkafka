@@ -35,5 +35,5 @@ The kafka version is 0.8.2.1
 
    - note: you need to change the path to your local path at the -v parameter
 
-- Limitation: right now only can run the app(consumer/producer) in the docker's host or in the container belonding to the same docker server.(you can use duffqiu/kafka_cmd images to run the topics, consumer, producer's client which are from kafka software packages). Till now, I still can't find the way to run the app in the VM's host or in different docker server's containers.
+   - note: if you want to run the app outside the docker's host or the container under the same the docker, you need to use the bridge network mode in the virtualbox.
 
