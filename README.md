@@ -23,9 +23,9 @@ The kafka version is 0.8.2.1
 
 - Start a zookeeper standalone (or a cluster)
 
-- Modify the zookeeper ip in the multiple/<id>/config/server.properties
+- Modify the zookeeper ip in the multiple/{id}/config/server.properties
 
-- Modify the kafka's advertised.host.name to the docker0's IP and advertised.port to the docker host's mapping port in the multiple/<id>/config/server.properties
+- Modify the kafka's advertised.host.name to the docker0's IP and advertised.port to the docker host's mapping port in the multiple/{id}/config/server.properties
 
 - Start node 1: `docker run -d --name kafka1 -p 9092:9092 --hostname kafka1 -v /root/docker/kafka/multiple/1/config:/kafka_2.11/config -v /root/docker/kafka/multiple/1/tmp/kafka-logs:/tmp/kafka-logs duffqiu/kafka`
 
